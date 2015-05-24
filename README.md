@@ -4,8 +4,8 @@
 
 ## Requirements
 
-* [DMD](http://dlang.org/download.html) - The D Programming Language compiler
-* [DUB](http://code.dlang.org/download) - The D package registry
+* [DMD](http://dlang.org/download.html) - The D programming language compiler
+* [DUB](http://code.dlang.org/download) - The D build tool
 
 ## Running
 
