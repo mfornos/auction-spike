@@ -9,7 +9,7 @@
 
 ## Running
 
-1. Checkout this repository
+1. Clone this repository: ```git clone https://github.com/mfornos/auction-spike.git```
 2. In the root folder, run: ```dub```
 
 You will get the following output:
