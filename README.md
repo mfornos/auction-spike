@@ -1,4 +1,4 @@
-# Auctions Spike
+# Auction Spike
 
 [Vibe.d](http://vibed.org/) proof of concept service that delivers Dutch Auctions over WebSockets.
 
