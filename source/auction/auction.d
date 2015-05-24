@@ -117,7 +117,8 @@ void start()
     logInfo("Auction started (%s)", Clock.currTime());
 }
 
-private:
+private
+{
 
     const enum Status : string { created = "new", open = "open", closed = "closed" };
     const enum Protocol : string { ack = "ack", tick = "tick", late = "late",
@@ -202,6 +203,8 @@ private:
             broadcast();
         }
     }
+
+}
 
 unittest
 {
