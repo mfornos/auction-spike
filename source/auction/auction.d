@@ -103,7 +103,7 @@ void connect(scope WebSocket socket)
         }
     }
 
-    logInfo("> Bidder disconnect: %s", token);
+    logInfo("> Bidder disconnected: %s", token);
 }
 
 /** Starts this auction. */
