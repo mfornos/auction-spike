@@ -22,7 +22,8 @@ import std.string;
  */
 class Auction {
 
-static struct Params {
+static struct Params
+{
     string item = "B1002:ASA5500";
     string description = "The Cisco ® ASA 5500 Series Business Edition is an enterprise-strength
        comprehensive security solution that combines market-leading firewall,
@@ -109,13 +110,15 @@ void start()
     logInfo("Auction started (%s)", Clock.currTime());
 }
 
-private {
+private
+{
 
     const enum Status : string { created = "new", open = "open", closed = "closed" };
     const enum Protocol : string { ack = "ack", tick = "tick", late = "late",
                                    win = "win", reserve = "res" };
 
-    struct Bidder {
+    struct Bidder
+    {
         Task task;
         string token;
         void send(Protocol op)
