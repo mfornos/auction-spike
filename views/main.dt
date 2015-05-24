@@ -1,0 +1,41 @@
+!!! 5
+html
+  head
+    title Dutch Auctions over WebSockets - Spike
+    meta(name= 'viewport', content='width=device-width, initial-scale=1')
+    link(rel= 'stylesheet', type='text/css', href='/css/main.css')
+    link(rel= 'stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+  body
+    div.container
+      div.page-header
+        h1 Web Auctions
+          small Spike
+      div.lead(style= 'display:none')
+        span.glyphicon
+        span#outcome
+      div.row
+        div.col-sm-6
+          div.panel.panel-default
+            div.panel-heading
+              div Price
+              h2.panel-title#price ...
+            div.panel-body
+              button#accept-bid.btn.btn-primary.btn-lg.btn-block.disabled(type= 'button') Bid Now
+        div.col-sm-6
+          dl.dl-horizontal
+            dt Item
+            dd#item ...
+            dt Description
+            dd#item-desc ...
+            dt Bidders
+            dd#bidders ...
+            dt Status
+            dd#auction-status ...
+    footer.footer
+      div.container
+        p Socket:
+          span#connection-status ...
+          button#disconnect.btn.btn-link(type= 'button') Disconnect
+
+    script(src= 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src= '/js/sockets.js')

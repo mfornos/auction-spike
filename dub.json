@@ -1,0 +1,10 @@
+{
+	"name": "auction-spike",
+	"description": "Proof of concept service that delivers Dutch Auctions over WebSockets.",
+	"copyright": "Copyright © 2015, mfornos",
+	"authors": ["mfornos"],
+	"dependencies": {
+		"vibe-d": "~>0.7.23"
+	},
+	"versions": ["VibeDefaultMain"]
+}
