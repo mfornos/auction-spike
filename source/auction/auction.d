@@ -70,7 +70,7 @@ this()
 /** Handles websocket connections to bid in this auction.
 
     Params:
-        socket  = peer websocket
+        socket  = peer WebSocket
 */
 void connect(scope WebSocket socket)
 {
@@ -103,7 +103,7 @@ void connect(scope WebSocket socket)
         }
     }
 
-    logInfo("disconnect");
+    logInfo("> Bidder disconnect: %s", token);
 }
 
 /** Starts this auction. */
