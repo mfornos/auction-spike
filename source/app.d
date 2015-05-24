@@ -8,7 +8,7 @@ import vibe.http.websockets : handleWebSockets;
 
 import auction;
 
-/** Auctions Spike
+/** Auction Spike
 
     Vibe.d proof of concept service that delivers Dutch Auctions over WebSockets.
  */
