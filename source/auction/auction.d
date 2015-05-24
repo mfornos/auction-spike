@@ -22,6 +22,7 @@ import std.string;
  */
 class Auction {
 
+/** Default auction parameters */
 static struct Params
 {
     string item = "B1002:ASA5500";
@@ -48,16 +49,22 @@ this()
     //
 }
 
+/** Returns the actual price as string */
 @property string actualPrice() { return format("$%.2f", m_actualPrice); }
 
+/** Returns true if the auction is open */
 @property bool open() { return m_status == Status.open; }
 
+/** Returns true if the auction is closed (i.e. not open) */
 @property bool closed() { return !open; }
 
+/** Returns the number of connected bidders */
 @property int biddersCount() { return cast(int) m_bidders.length; }
 
+/** Returns the auction parameters */
 @property Params params() { return m_params; }
 
+/** Sets the auction parameters */
 @property void params(Params params) { m_params = params; }
 
 /** Handles websocket connections to bid in this auction.
@@ -134,6 +141,7 @@ private
     Timer m_timer;
     Bidder[void*] m_bidders;
 
+    /** Builds a JSON object with the auction state */
     string message(Protocol op)
     {
         Json j = Json.emptyObject;
@@ -150,6 +158,7 @@ private
         return msg;
     }
 
+    /** Handles the auction clock */
     void tick()
     {
         m_tick++;
@@ -167,6 +176,7 @@ private
                 m_status, m_tick, biddersCount, actualPrice);
     }
 
+    /** Broadcasts the auction state to all connected peers */
     void broadcast()
     {
         foreach(bidder; m_bidders) {
@@ -174,6 +184,7 @@ private
         }
     }
 
+    /** Closes the auction for a winner, or by reached reserve */
     void outcome(Protocol op, void* tid = null)
     {
         if(open) {
