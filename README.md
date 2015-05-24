@@ -4,13 +4,13 @@
 
 ## Requirements
 
-1. [DMD](http://dlang.org/download.html) - The D Programming Language
-2. [DUB](http://code.dlang.org/download) - The D package registry
+* [DMD](http://dlang.org/download.html) - The D Programming Language
+* [DUB](http://code.dlang.org/download) - The D package registry
 
 ## Running
 
-* Checkout this repository
-* In the root folder, run: ```dub```
+1. Checkout this repository
+2. In the root folder, run: ```dub```
 
 You will get the following output:
 
