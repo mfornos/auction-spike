@@ -1,16 +1,16 @@
 # Auctions Spike
 
-Vibe.d proof of concept service that delivers Dutch Auctions over WebSockets.
+[Vibe.d](http://vibed.org/) proof of concept service that delivers Dutch Auctions over WebSockets.
 
 ## Requirements
 
-1. dlang DMD http://dlang.org/download.html
-2. dub http://code.dlang.org/download
+1. [DMD](http://dlang.org/download.html) - The D Programming Language
+2. [DUB](http://code.dlang.org/download) - The D package registry
 
 ## Running
 
-1. checkout this repository
-2. in the root folder of the project, run: ```dub```
+1. Checkout this repository
+2. In the root folder, run: ```dub```
 
 You will get the following output:
 
@@ -21,4 +21,3 @@ Please open http://127.0.0.1:8080/ in your browser.
 ```
 
 Now you can browse the service (one bidder per browser tab) and start bidding.
-
