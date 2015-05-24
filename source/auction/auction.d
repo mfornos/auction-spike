@@ -29,7 +29,7 @@ static struct Params {
        VPN, and optional content security capabilities, so you can feel confident
        your business is protected.";
     float startPrice = 650.50;
-    float reservePrice = 640.00;
+    float reservePrice = 340.00;
     float delta = 0.50;
     Duration frequency = 2.seconds;
     int maxBidders = 10000;
