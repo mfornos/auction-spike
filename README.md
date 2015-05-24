@@ -9,8 +9,8 @@
 
 ## Running
 
-1. Checkout this repository
-2. In the root folder, run: ```dub```
+* Checkout this repository
+* In the root folder, run: ```dub```
 
 You will get the following output:
 
