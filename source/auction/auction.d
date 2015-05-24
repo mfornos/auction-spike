@@ -98,6 +98,7 @@ void connect(scope WebSocket socket)
     bidder.send(Protocol.tick);
 
     while (socket.waitForData()) {
+        // Waits for a bid
         if(Protocol.ack == socket.receiveText()) {
             outcome(Protocol.win, sockid);
         }
